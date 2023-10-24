@@ -1,0 +1,1 @@
+# Data ingestion refers to reading the data from any source or any database. We will also do spliting of data into train & test and also create validation data.

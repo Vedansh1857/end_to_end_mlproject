@@ -1,0 +1,1 @@
+# Any code realted to transformation of data such as transformation of data from categorical to numerical features, handling onehot encoding OR label encoding.

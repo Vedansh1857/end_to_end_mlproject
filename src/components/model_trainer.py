@@ -1,0 +1,1 @@
+# In this py file we will write all the training code. Trainig the model on various Ml algorithms. We will see the evaluation also in this such as the confusion matrix, R2 score, etc.
