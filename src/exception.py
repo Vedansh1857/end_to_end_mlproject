@@ -17,15 +17,9 @@ def error_message_detail(error,error_detail:sys):
 
 class CustomException(Exception):
     def __init__(self,error_msg,error_detail:sys):
-        super().__init__(error_msg)
-        self.error_msg = error_message_detail(error_msg,error_detail=error_detail)
+        super().__init__(error_msg) # This will return the error msg of "Exception class which we have inherited here".
+        self.error_msg = error_message_detail(error_msg,error_detail=error_detail) # This will return the error msg which we are returning in the "error_message_detail" function written above.
 
     def __str__(self):
-        return self.error_msg
+        return self.error_msg # Just to print the error msg in the terminal.
     
-if __name__=="__main__":
-    try:
-        a = 1/0
-    except Exception as e:
-        logging.info("Division by zero")
-        raise CustomException(e,sys)
